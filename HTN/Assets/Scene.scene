@@ -1793,7 +1793,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 10.000000, y: 10.000000, z: 10.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 20.000000, y: 20.000000, z: 20.000000}
+    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -1844,6 +1844,7 @@
     - !<own> 969eb915-dfdd-46b4-8fd8-c009a62e0a2e
   Components:
     - !<own> 42643ad3-f505-4a49-bac9-bda3ca26552a
+    - !<own> b7272160-fb04-4843-b33c-a85ebce1ac25
 - !<SceneObject/9a25c3f9-2db6-43d3-8434-4d0950580654>
   PrefabRemaps:
     []
@@ -2072,6 +2073,24 @@
     []
   Components:
     - !<own> 56a78628-32c4-4f9c-b792-9f4e7ccacb72
+- !<ScriptComponent/b7272160-fb04-4843-b33c-a85ebce1ac25>
+  PrefabRemaps:
+    []
+  Name: ControllerManager
+  Enabled: true
+  ScriptAsset: !<reference> ce821202-fb6e-4cce-aa18-fa54581ec11e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      leftHand: !<reference.SceneObject> c9cdc254-5719-4900-bf8d-ecb37d0b9103
+      rightHand: !<reference.SceneObject> 7e33f213-9aaa-491a-b8c3-cce917d6e433
+      Mesh: !<reference.SceneObject> 969eb915-dfdd-46b4-8fd8-c009a62e0a2e
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b87d42a6-06aa-4145-82a0-1235dfa5bc14>
   PrefabRemaps:
     - 0241cf30-9d3f-45b1-bc17-441203dd6936: e798d31a-2bad-4d59-9110-f038120ad232

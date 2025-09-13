@@ -27,16 +27,21 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    {}
+    Mesh: false
+    leftHand: false
+    rightHand: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    -
-      {}
+    - leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Mesh: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - // @input SceneObject leftHand
+    - // @input SceneObject rightHand
+    - // @input SceneObject Mesh
