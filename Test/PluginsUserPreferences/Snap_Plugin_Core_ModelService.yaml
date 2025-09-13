@@ -1,0 +1,9 @@
+ExternalSources:
+  type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
+  value:
+    - 16435b76-0dc1-4394-b73d-a82078ee7567: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/PBRMaterial/Resources/pbr.ss_graph"
+    - 223bd651-44d8-4fd5-b879-6c733cc587b2: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/TypeScript/Resources/Untitled TypeScript.ts"
+    - abf9473f-94d8-45ae-a31d-b04dc9cd0562: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Resources/MaterialParams.png"
+    - aeb6d3ae-bcb2-400f-b0ac-2edc19c47117: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Resources/Base.png"
+    - f4f2a989-6182-4184-97ad-abb4f304f9e5: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Resources/Normal.png"
+  options: 4

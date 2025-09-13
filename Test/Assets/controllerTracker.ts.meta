@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/223bd651-44d8-4fd5-b879-6c733cc587b2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d7627bf2-b0d3-4495-8a95-0bd34028d852
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d7627bf2-b0d3-4495-8a95-0bd34028d852
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> a1946148-74a6-4596-9b58-c8b987939183
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/a1946148-74a6-4596-9b58-c8b987939183>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6da3dc5f-6997-4cf8-9da6-bd5ab9cf466f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    Mesh: false
+    leftHand: false
+    rightHand: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Mesh: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject leftHand
+    - // @input SceneObject rightHand
+    - // @input SceneObject Mesh
