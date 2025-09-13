@@ -39,8 +39,6 @@ export class ControllerManager extends BaseScriptComponent {
         // Get the world positions of the left and right hands
         const leftPos = this.leftHand.getTransform().getWorldPosition();
         const rightPos = this.rightHand.getTransform().getWorldPosition();
-        print("Left Hand Position: " + leftPos);
-        print("Right Hand Position: " + rightPos);
 
         // Only show the mesh if the hands are a certain distance apart
         const distance = leftPos.distance(rightPos);

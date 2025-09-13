@@ -21,13 +21,13 @@ viewConfig:
     tint: true
     screenshot: false
     videoScreenRecord: false
-  cameraType: Front
+  cameraType: Back
 metaInfo:
   hints:
     []
   tags:
     []
-  lensName: HTN
+  lensName: Magic Spell
   lensDescriptors:
     - EXPERIMENTAL_API
   lensApplicability:
@@ -36,7 +36,7 @@ metaInfo:
   lensClientCompatibilities:
     - Spectacles
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: f3bd1050ca558a4af40c341caa933c9b
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.9.0.25041703
