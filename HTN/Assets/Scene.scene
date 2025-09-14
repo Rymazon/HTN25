@@ -1000,7 +1000,7 @@
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.949218, z: -8.228436}
-    Rotation: {x: 30.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 15.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
     HasSegmentScaleCompensation: false
   Children:
@@ -2123,6 +2123,11 @@
       leftHand: !<reference.SceneObject> c9cdc254-5719-4900-bf8d-ecb37d0b9103
       rightHand: !<reference.SceneObject> 7e33f213-9aaa-491a-b8c3-cce917d6e433
       Mesh: !<reference.SceneObject> 34697d48-b059-4543-a4ee-6743f2410e4e
+      Spell: !<reference.SceneObject> e04a9375-0cac-4c35-80f3-e902a9e4779d
+      Spell1Mat: !<reference.Material> e863b13e-382a-4cc6-9aae-5f3b15590c4d
+      Spell2Mat: !<reference.Material> edf53a1e-fb46-4b77-a3a3-d8c9be1d918f
+      Spell3Mat: !<reference.Material> 95e2723c-8f7b-40df-80c2-7db8fbbfca71
+      Spell4Mat: !<reference.Material> b0bec67f-fc44-45fe-9b36-42d165e2339c
   ScriptTypes:
     "":
       {}

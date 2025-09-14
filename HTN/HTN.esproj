@@ -21,13 +21,13 @@ viewConfig:
     tint: true
     screenshot: false
     videoScreenRecord: false
-  cameraType: Back
+  cameraType: Front
 metaInfo:
   hints:
     []
   tags:
     []
-  lensName: Magic Spell
+  lensName: ARcane
   lensDescriptors:
     - EXPERIMENTAL_API
   lensApplicability:

@@ -27,7 +27,13 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    BlockMat: false
     Mesh: false
+    Spell: false
+    Spell1Mat: false
+    Spell2Mat: false
+    Spell3Mat: false
+    Spell4Mat: false
     leftHand: false
     rightHand: false
   ScriptTypesHidden:
@@ -38,6 +44,12 @@
     - leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       rightHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       Mesh: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Spell: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Spell1Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      Spell2Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      Spell3Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      Spell4Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      BlockMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -45,3 +57,9 @@
     - // @input SceneObject leftHand
     - // @input SceneObject rightHand
     - // @input SceneObject Mesh
+    - // @input SceneObject Spell
+    - // @input Asset.Material Spell1Mat
+    - // @input Asset.Material Spell2Mat
+    - // @input Asset.Material Spell3Mat
+    - // @input Asset.Material Spell4Mat
+    - // @input Asset.Material BlockMat
