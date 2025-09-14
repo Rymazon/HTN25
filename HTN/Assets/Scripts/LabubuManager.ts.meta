@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/79e35b56-16f9-470d-bab5-01da4556e5d5>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> edf1ff57-c9c5-4dbb-b2c5-f9f69207a81d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> edf1ff57-c9c5-4dbb-b2c5-f9f69207a81d
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 07216f80-1360-40c6-9b28-ccabb511d321
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/07216f80-1360-40c6-9b28-ccabb511d321>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 77083586-407a-4f34-b30b-573524151d3f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    LabubuPrefab: false
+    cameraObj: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - cameraObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      LabubuPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject cameraObj
+    - // @input Asset.ObjectPrefab LabubuPrefab

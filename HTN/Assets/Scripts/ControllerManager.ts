@@ -76,7 +76,7 @@ export class ControllerManager extends BaseScriptComponent {
         );
         this.lastSpellMat = this.Spell1Mat;
     }
-    
+
     private Cast_Spell(pressed: number) {
         if (pressed == 1 && !this.isBlocking) {
             // Haptics
@@ -88,6 +88,7 @@ export class ControllerManager extends BaseScriptComponent {
             const direction = spellTransform.getWorldRotation().multiplyVec3(vec3.forward());
             // Set the ray end point (e.g., 100 units forward)
             const rayEnd = origin.add(direction.uniformScale(100));
+            print("Casting spell from " + origin + " to " + rayEnd);
 
             // Create a global probe and raycast
             let hitDistance = 100;

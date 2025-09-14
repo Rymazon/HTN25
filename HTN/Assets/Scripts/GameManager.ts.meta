@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/30cd0702-f6e0-4e35-bfd6-58c97397408d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7cc4f1cd-96e4-43c4-8287-078ec7c82c51
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7cc4f1cd-96e4-43c4-8287-078ec7c82c51
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 59267646-3392-4d4e-9324-90fbc38a9717
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/59267646-3392-4d4e-9324-90fbc38a9717>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 61d0b777-1108-40b8-9ac1-d4a47488c342
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    GameText: false
+    LabubuObj: false
+    SpellObject: false
+    cameraObj: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - SpellObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      GameText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cameraObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      LabubuObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject SpellObject
+    - // @input SceneObject GameText
+    - // @input SceneObject cameraObj
+    - // @input SceneObject LabubuObj
