@@ -7,9 +7,11 @@
 MPU6050 mpu(Wire);
 
 // thresholds
-const float GYRO_THRESH = 280;        // deg/s for flicks
+const float PITCH_THRESH = 160;        // deg/s
+const float ROLL_THRESH = 260;
+const float YAW_THRESH = 300;
+
 const unsigned long EVENT_COOLDOWN = 200; // ms
-const unsigned long COMBO_TIMEOUT = 2000; // ms between actions
 
 const int MAX_SPELLS = 4;
 
@@ -78,12 +80,13 @@ void loop() {
 
   unsigned long now = millis();
   if (now - lastEvent > EVENT_COOLDOWN) {
-    if (gx > GYRO_THRESH) { addAction("PITCH_UP"); } // pitch up
-    else if (gx < -GYRO_THRESH) { addAction("PITCH_DOWN"); } // pitch down
-    else if (gy > GYRO_THRESH) { addAction("ROLL_RIGHT"); } // roll right
-    else if (gy < -GYRO_THRESH) { addAction("ROLL_LEFT"); } // roll left
-    else if (gz > GYRO_THRESH) { addAction("YAW_LEFT"); } // yaw left
-    else if (gz < -GYRO_THRESH) { addAction("YAW_RIGHT"); } // yaw right
+    if (gx > PITCH_THRESH) { addAction("PITCH_UP"); } // pitch up
+    else if (gx < -PITCH_THRESH) { addAction("PITCH_DOWN"); } // pitch down
+    // disable roll for now
+    // else if (gy > ROLL_THRESH) { addAction("ROLL_RIGHT"); } // roll right
+    // else if (gy < -ROLL_THRESH) { addAction("ROLL_LEFT"); } // roll left
+    else if (gz > YAW_THRESH) { addAction("YAW_LEFT"); } // yaw left
+    else if (gz < -YAW_THRESH) { addAction("YAW_RIGHT"); } // yaw right
   }
 }
 
@@ -118,6 +121,7 @@ void checkCombos() {
     unsigned long dt = prev2_action.timestamp - prev1_action.timestamp;
 
     if (prev2_action.name == "PITCH_UP" && prev1_action.name == "PITCH_DOWN") {
+      delay(500);
       String combo = "C";
       Serial.println(">>> " + combo);
       sendBLE(combo);
