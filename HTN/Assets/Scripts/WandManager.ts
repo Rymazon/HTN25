@@ -69,6 +69,26 @@ export class BLEArduino extends BaseScriptComponent {
           .registerNotifications((value) => {
             var message = this.bin2str(value);
             print("Notification: " + message);
+            if(message == "C")
+            {
+              // Cast Spell
+            }
+            else if(message == "1")
+            {
+              // Change to Spell 1
+            }
+            else if(message == "2")
+            {
+              // Change to Spell 2
+            }
+            else if(message == "3")
+            {
+              // Change to Spell 3
+            }
+            else if(message == "4")
+            {
+              // Change to Spell 4 (Block?)
+            }
 
             return message;
           })
