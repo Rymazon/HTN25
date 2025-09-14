@@ -82,7 +82,6 @@
   ScriptInputs:
     "":
       GameText: !<reference.SceneObject> 4e125e80-0972-4baf-ac0a-19d5c5815fcf
-      SpellObject: !<reference.SceneObject> e04a9375-0cac-4c35-80f3-e902a9e4779d
   ScriptTypes:
     "":
       {}

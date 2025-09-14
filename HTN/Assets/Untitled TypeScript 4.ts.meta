@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/c7ffc292-d636-4f74-b1b1-18cb1f78d87b>
+- !<AssetImportMetadata/326383dd-48cd-4736-8393-f2bd36e034cc>
   ImportedAssetIds:
-    TypeScriptAsset: !<reference> 87b68d5e-4637-4428-aa2e-386da9b450ac
+    TypeScriptAsset: !<reference> 7d7ece45-df90-438d-81bb-9a89669e946e
   ImporterName: TypeScriptAssetImporter
-  PrimaryAsset: !<reference> 87b68d5e-4637-4428-aa2e-386da9b450ac
+  PrimaryAsset: !<reference> 7d7ece45-df90-438d-81bb-9a89669e946e
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
-    TypeScriptAsset: !<own> 819c8d6f-db63-4e81-b571-44ae3aebffcf
+    TypeScriptAsset: !<own> 15589716-8501-4bc9-9fe9-48e15746067e
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<TypeScriptAssetData/819c8d6f-db63-4e81-b571-44ae3aebffcf>
+- !<TypeScriptAssetData/15589716-8501-4bc9-9fe9-48e15746067e>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -22,20 +22,21 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: a7e07b20-f1b5-460b-bd27-a7e37284f89d
+  ComponentUid: 4bdc35c9-32e0-423a-9723-34e18c0b9c25
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    GameText: false
+    {}
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - GameText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+    -
+      {}
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input SceneObject GameText
+    []

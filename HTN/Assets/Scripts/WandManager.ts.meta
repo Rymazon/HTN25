@@ -27,18 +27,27 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    Spell: false
+    Spell1Mat: false
+    Spell2Mat: false
+    Spell3Mat: false
     bluetoothModule: false
-    screenText: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - bluetoothModule: !<reference.BluetoothCentralModule> 00000000-0000-0000-0000-000000000000
-      screenText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+    - Spell: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Spell1Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      Spell2Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      Spell3Mat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      bluetoothModule: !<reference.BluetoothCentralModule> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - // @input SceneObject Spell
+    - // @input Asset.Material Spell1Mat
+    - // @input Asset.Material Spell2Mat
+    - // @input Asset.Material Spell3Mat
     - // @input Asset.BluetoothCentralModule bluetoothModule
-    - // @input Component.Text screenText

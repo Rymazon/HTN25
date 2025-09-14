@@ -1,11 +1,8 @@
 @component
-export class NewScript extends BaseScriptComponent {
+export class Labubu extends BaseScriptComponent {
 
     @input
     private GameText: SceneObject;
-
-    @input
-    private SpellObject: SceneObject;
 
     onAwake() {
         this.createEvent("OnStartEvent").bind(this.onStart.bind(this));

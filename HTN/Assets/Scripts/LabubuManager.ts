@@ -1,5 +1,5 @@
 @component
-export class NewScript extends BaseScriptComponent {
+export class LabubuManager extends BaseScriptComponent {
 
     @input
     private cameraObj: SceneObject;
