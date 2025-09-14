@@ -14,7 +14,7 @@ const unsigned long COMBO_TIMEOUT = 2000; // ms between actions
 const int MAX_SPELLS = 4;
 
 // action buffer
-struct Action
+struct Action {
   String name;
   unsigned long timestamp;
 };
@@ -24,7 +24,7 @@ Action actionBuffer[MAX_ACTIONS];
 int actionCount = 0;
 
 unsigned long lastEvent = 0;
-int current_selection = 0;
+int current_selection = 1;
 
 // BLE
 BLEServer* pServer;
@@ -127,7 +127,7 @@ void checkCombos() {
 
   if (prev1_action.name == "ROLL_RIGHT" || prev1_action.name == "YAW_RIGHT"){
     current_selection ++;
-    if(current_selection > MAX_SPELLS - 1) current_selection = 0;
+    if(current_selection > MAX_SPELLS) current_selection = 1;
     String combo = String(current_selection);
     Serial.println(">>> " + combo);
     sendBLE(combo);
@@ -136,7 +136,7 @@ void checkCombos() {
   
   if (prev1_action.name == "ROLL_LEFT" || prev1_action.name == "YAW_LEFT"){
     current_selection --;
-    if(current_selection < 0) current_selection = MAX_SPELLS - 1;
+    if(current_selection < 1) current_selection = MAX_SPELLS;
     String combo = String(current_selection);
       Serial.println(">>> " + combo);
       sendBLE(combo);
