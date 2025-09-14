@@ -19,6 +19,9 @@ export class ControllerManager extends BaseScriptComponent {
     private Spell: SceneObject;
 
     @input
+    private AlternateSpell: SceneObject;
+
+    @input
     private Spell1Mat: Material;
 
     @input
@@ -172,6 +175,7 @@ export class ControllerManager extends BaseScriptComponent {
         const distance = leftPos.distance(rightPos);
         if (distance < 25) {
             this.Mesh.enabled = true;
+            this.AlternateSpell.enabled = false;
 
             // Set the position of the Mesh to be the average of the two hand positions
             const midPoint = leftPos.add(rightPos).uniformScale(0.5);
@@ -184,6 +188,7 @@ export class ControllerManager extends BaseScriptComponent {
             this.Mesh.getTransform().setWorldRotation(midRot); 
         } else {
             this.Mesh.enabled = false;
+            this.AlternateSpell.enabled = true;
             return;
         }
     }

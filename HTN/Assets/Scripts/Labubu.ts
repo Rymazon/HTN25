@@ -17,25 +17,24 @@ export class Labubu extends BaseScriptComponent {
         else {
             print("No PhysicsBody component found on LabubuObj");
         }
-        this.sceneObject.enabled = true;
     }
 
     private onCollision()
     {
         print("Hit")
-        const parentSceneObject = this.sceneObject.getParent();
-        print(parentSceneObject.name)
-        const labubuManager = parentSceneObject.getComponent("LabubuManager" as any);
-        if (labubuManager) {
-            labubuManager.SpawnLabubu();
-            print("Spawning new Labubu");
-        }
-        else
-        {
-            print("No LabubuManager component found on parent");
-        }
+        // const parentSceneObject = this.sceneObject.getParent();
+        // print(parentSceneObject.name)
+        // const labubuManager = parentSceneObject.getComponent("LabubuManager" as any);
+        // if (labubuManager) {
+        //     labubuManager.SpawnLabubu();
+        //     print("Spawning new Labubu");
+        // }
+        // else
+        // {
+        //     print("No LabubuManager component found on parent");
+        // }
 
-        this.destroy(); // Destroy this Labubu instance after spawning a new one
+        this.sceneObject.enabled = false; // Destroy this Labubu instance after spawning a new one
 
     }
 

@@ -32,9 +32,9 @@ export class LabubuManager extends BaseScriptComponent {
         const spawnPos = camPos.add(spawnDir.uniformScale(distance));
         
         // Make a copy of self
-        print("Spawning Labubu at: " + spawnPos);
-        const newLabubu = this.LabubuPrefab.instantiate(this.sceneObject);
-        newLabubu.getTransform().setWorldPosition(spawnPos);
+        // print("Spawning Labubu at: " + spawnPos);
+        // const newLabubu = this.LabubuPrefab.instantiate(this.sceneObject);
+        // newLabubu.getTransform().setWorldPosition(spawnPos);
 
         //const newLabubu = this.LabubuObj.getParent().copySceneObject(this.LabubuObj);
         // newLabubu.getTransform().setWorldPosition(spawnPos);
